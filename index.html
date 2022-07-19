@@ -30,17 +30,14 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"
     ></script>
-
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"
     ></script>
-
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"
     ></script>
-
     <title>Path Finder</title>
   </head>
 
@@ -85,6 +82,9 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#" onclick="dropdown(event)"
+                    >A* Search</a
+                  >
+                  <a class="dropdown-item" href="#" onclick="dropdown(event)"
                     >Dijkstra</a
                   >
                   <a class="dropdown-item" href="#" onclick="dropdown(event)"
@@ -92,6 +92,9 @@
                   >
                   <a class="dropdown-item" href="#" onclick="dropdown(event)"
                     >Depth First Search</a
+                  >
+                  <a class="dropdown-item" href="#" onclick="dropdown(event)"
+                    >Greedy Best First Search</a
                   >
                 </div>
               </li>
@@ -105,16 +108,14 @@
                 </button>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#" onclick="throwObstacles()">
-                  Throw Obstacles
-                  <span class="sr-only"> (current) </span>
-                </a>
+                <a class="nav-link" href="#" onclick="throwObstacles()"
+                  >Throw Obstacles<span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#" onclick="resetCanvas()">
-                  Clear
-                  <span class="sr-only"> (current) </span>
-                </a>
+                <a class="nav-link" href="#" onclick="resetCanvas()"
+                  >Clear<span class="sr-only">(current)</span></a
+                >
               </li>
               <div class="row justify-content-end text-center">
                 <div class="col-12">
@@ -131,7 +132,7 @@
                       ><a
                         style="color: black; text-decoration: none"
                         href="https://github.com/Devendra2104"
-                        >&lt;DEVENDRA/&gt;</a
+                        >&lt;DEVENDRA&gt;</a
                       ></span
                     >
                   </p>
